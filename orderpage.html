@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="3LEGANT - Premium Fashion Store with New Arrivals for Men, Women, and Kids">
+  <title>3LEGANT - Premium Fashion Store</title>
+  <link rel="stylesheet" href="orderpage.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="top-bar">
+        <div class="logo">
+          <a href="#" aria-label="3LEGANT Home">3LEGANT</a>
+        </div>
+        <div class="search-container">
+          <div class="search-box">
+            <label for="search-input" class="sr-only">Search the site</label>
+            <i class="fas fa-search" aria-hidden="true"></i>
+            <input type="text" id="search-input" placeholder="Search the site" />
+          </div>
+        </div>
+        <div class="user-actions">
+          <a href="wishlist.html">
+            <button class="wishlist" aria-label="Wishlist">
+              <i class="far fa-heart" aria-hidden="true"></i>
+            </button>
+          </a>            
+          <a href="cart.html">
+            <button class="cart" aria-label="Shopping Cart">
+              <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+            </button>
+          </a>            
+          <div class="user-dropdown">
+            <button class="user-container" aria-label="User Account" aria-expanded="false">
+              <i class="fas fa-user user-icon" aria-hidden="true"></i>
+              <i class="fas fa-caret-down caret-down" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="wishlist.html"><i class="fas fa-heart" aria-hidden="true"></i> Wishlist</a>
+              <a href="cart.html" aria-label="Go to shopping cart">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i> Cart
+              </a>
+              <a href="signup.html"><i class="fas fa-user-plus" aria-hidden="true"></i> Sign up</a>
+              <a href="signin.html"><i class="fas fa-sign-out-alt" aria-hidden="true"></i> Sign Out</a>                
+            </div>
+          </div>
+          <button class="menu-toggle" aria-label="Menu">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="newarrivals.html">New Arrivals</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="kids.html">Kids</a></li>
+          <li><a href="brands.html">Brands</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+</head>
+<body>
+  <div class="container2" id="mainContainer">
+    <button class="view-images-btn" id="toggleCarousel">View Product Images</button>
+
+    <div class="split-layout">
+      <div class="order-content">
+        <div class="order-confirmation">
+          <div class="header">
+            <h1>Thanks for order</h1>
+            <p class="order-number"># 27658-p</p>
+          </div>
+
+          <div class="progress-container">
+            <div class="progress-bar">
+              <div class="progress-step active">
+                <div class="progress-dot"></div>
+                <span>Order</span>
+              </div>
+              <div class="progress-step">
+                <div class="progress-dot"></div>
+                <span>Shipping</span>
+              </div>
+              <div class="progress-step">
+                <div class="progress-dot"></div>
+                <span>Delivery</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-details">
+            <table>
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Gradient Shorts</td>
+                  <td>1</td>
+                  <td>$ 245</td>
+                </tr>
+                <tr>
+                  <td>Sweatshirt</td>
+                  <td>1</td>
+                  <td>$ 345</td>
+                </tr>
+                <tr>
+                  <td>Classic Tee</td>
+                  <td>1</td>
+                  <td>$ 95</td>
+                </tr>
+                <tr>
+                  <td>Hoodie</td>
+                  <td>1</td>
+                  <td>$ 110</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="total-price">
+              <p>Total price</p>
+              <p class="price">$ 795</p>
+            </div>
+          </div>
+
+          <div class="delivery-payment-info">
+            <div class="info-box">
+              <h3>Address</h3>
+              <p>400000, Moscow, st. Arbatova, house 10, apt. 58</p>
+            </div>
+            <div class="info-box">
+              <h3>Delivery time</h3>
+              <p>
+                03/05/2023
+                <br>
+                from 12:00 to 18:00
+              </p>
+            </div>
+            <div class="info-box">
+              <h3>Payment method</h3>
+              <div class="payment-methods">
+                <div class="payment-method active" data-method="mastercard">
+                  <div class="payment-icon">
+                    <i class="fab fa-cc-mastercard" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="payment-method" data-method="visa">
+                  <div class="payment-icon">
+                    <i class="fab fa-cc-visa" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="payment-method" data-method="directexpress">
+                  <div class="payment-icon">
+                    <i class="fas fa-credit-card" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="payment-method" data-method="paypal">
+                  <div class="payment-icon">
+                    <i class="fab fa-cc-paypal" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-content" id="paymentContent">Payment processed via Mastercard ending in **** 5678</div>
+            </div>
+          </div>
+
+          <div class="footer2">
+            <p>
+              If you have any questions, please contact customer support on the website: <a href="#">Show more</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-side" id="carouselSide">
+        <div class="carousel-container" id="carouselContainer">
+          <div class="carousel-item active">
+            <img src="https://i.pinimg.com/736x/6f/cd/fc/6fcdfc09651455d3c77a2e1285239eb9.jpg" alt="Product image 1" class="carousel-image">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/474x/b7/ac/ad/b7acad3fe1754e56a1830009e65657f9.jpg" alt="Product image 2" class="carousel-image">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/474x/21/db/36/21db36b31cbe521a152ba3d45dd7893f.jpg" alt="Product image 3" class="carousel-image">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/474x/74/f6/77/74f677b0b7ddfacb554afa908b8ec240.jpg" alt="Product image 4" class="carousel-image">
+          </div>
+        </div>
+
+        <div class="carousel-dots" id="carouselDots">
+          <button class="carousel-dot active" data-index="0"></button>
+          <button class="carousel-dot" data-index="1"></button>
+          <button class="carousel-dot" data-index="2"></button>
+          <button class="carousel-dot" data-index="3"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-container">
+        <section class="footer-section newsletter" aria-labelledby="newsletter-heading">
+            <div class="logo">
+                <h2 id="newsletter-heading"></h2>
+            </div>
+            <p class="newsletter-text">Stay in the loop.</p>
+            <form class="newsletter-form" aria-label="Newsletter Subscription">
+                <input type="email" placeholder="Email Address" class="email-input" aria-label="Enter your email address" required>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+            <p class="terms-text">
+                By providing your email, you agree to the <a href="#" aria-label="Terms and Conditions">Terms & Conditions</a> and <a href="#" aria-label="Privacy Policy">Privacy Policy</a>.<br>
+                You may unsubscribe later.
+            </p>
+            <div class="ua-logo-container">
+                <div class="#">                     
+                </div>
+            </div>
+            <div class="payment-methods" aria-labelledby="payment-heading">
+                <h3 id="payment-heading">Accepted Payment Methods</h3>
+                <div class="payment-icons">
+                  <i class="fab fa-cc-mastercard" aria-label="Mastercard"></i>
+                  <i class="fab fa-cc-visa" aria-label="Visa"></i>
+                  <i class="fab fa-apple-pay" aria-label="Apple Pay"></i>
+                  <i class="fab fa-paypal" aria-label="PayPal"></i>
+              </div>
+        </section>
+        <section class="footer-section" aria-labelledby="need-help-heading">
+            <h3 id="need-help-heading">Need Help?</h3>
+            <ul>
+                <li><a href="#" aria-label="Help Center">Help Center</a></li>
+                <li><a href="#" aria-label="Size Guide">Size Guide</a></li>
+                <li><a href="#" aria-label="Shipping and Delivery">Shipping & Delivery</a></li>
+                <li><a href="#" aria-label="Returns and Exchanges">Returns & Exchanges</a></li>
+                <li><a href="#" aria-label="Store Locator">Store Locator</a></li>
+                <li><a href="#" aria-label="Order Tracking">Order Tracking</a></li>
+                <li><a href="#" aria-label="Gift Cards">Gift Cards</a></li>
+                <li><a href="#" aria-label="Sitemap">Sitemap</a></li>
+                <li><a href="#" aria-label="Student Discount">Student Discount</a></li>
+            </ul>
+        </section>
+        <section class="footer-section" aria-labelledby="about-ua-heading">
+            <h3 id="about-ua-heading">About 3Legent</h3>
+            <ul>
+                <li><a href="#" aria-label="Affiliates">Affiliates</a></li>
+                <li><a href="#" aria-label="About Us">About Us/Our Story</a></li>
+                <li><a href="#" aria-label="3legant Rewards">3legant Rewards</a></li>
+                <li><a href="#" aria-label="3legant Community">3legant Community</a></li>
+                <li><a href="#" aria-label="3legant Blog">3legant Blog</a></li>
+            </ul>
+        </section>
+        <section class="footer-section" aria-labelledby="ua-social-heading">
+            <h3 id="ua-social-heading">Our Socials</h3>
+            <ul class="social-links">
+                <li>
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                    <a href="#" aria-label="YouTube">YouTube</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <div class="footer-bottom">
+        <p>
+            © 3Legent, Inc. / <a href="#" aria-label="Privacy Policy">Privacy Policy</a> / <a href="#" aria-label="Terms and Conditions">Terms & Conditions</a> / <a href="#" aria-label="UA Rewards Terms">3legant Rewards Terms</a> / <a href="#" aria-label="Cookie Preferences">Cookie Preferences</a> / <a href="#" aria-label="US and Kenya Privacy Policy">US and Kenya Privacy Policy</a> / v2.53.0
+        </p>
+    </div>
+</footer>
+
+<script src="orderpage.js"></script>
+</body>
+</html>

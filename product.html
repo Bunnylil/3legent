@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мужские кроссовки и кеды | ROZETKA</title>
+    <link rel="stylesheet" href="product.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="top-bar">
+          <div class="logo">
+            <a href="#" aria-label="3LEGANT Home">3LEGANT</a>
+          </div>
+          <div class="search-container">
+            <div class="search-box">
+              <label for="search-input" class="sr-only">Search the site</label>
+              <i class="fas fa-search" aria-hidden="true"></i>
+              <input
+                type="text"
+                id="search-input"
+                placeholder="Search the site"
+              />
+            </div>
+          </div>
+          <div class="user-actions">
+            <button class="wishlist" aria-label="Wishlist">
+              <i class="far fa-heart" aria-hidden="true"></i>
+            </button>
+
+            <a href="cart.html" class="active" aria-label="Shopping Cart">
+              <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+            </a>
+
+            <div class="user-dropdown">
+              <button
+                class="user-container"
+                aria-label="User Account"
+                aria-expanded="false"
+              >
+                <i class="fas fa-user user-icon" aria-hidden="true"></i>
+                <i class="fas fa-caret-down caret-down" aria-hidden="true"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#"
+                  ><i class="fas fa-user-circle" aria-hidden="true"></i> My
+                  Account</a
+                >
+                <a href="#"
+                  ><i class="fas fa-heart" aria-hidden="true"></i> Wishlist</a
+                >
+                <a href="#"
+                  ><i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                  Orders</a
+                >
+                <a href="#"
+                  ><i class="fas fa-sign-out-alt" aria-hidden="true"></i> Log
+                  Out</a
+                >
+              </div>
+            </div>
+            <button class="menu-toggle" aria-label="Menu">
+              <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Brands</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumbs-item"><a href="men.html">Men</a></li>
+          <li class="breadcrumbs-item">
+            <span id="product-category">Shoes</span>
+          </li>
+
+          <li class="breadcrumbs-item">
+            <span id="product-title">Product Name</span>
+          </li>
+        </ul>
+      </div>
+
+      <main class="product-detail-container">
+        <div class="product-gallery">
+          <div class="main-image">
+            <img id="main-product-image" src="" alt="Main product image" />
+          </div>
+          <div class="thumbnail-container" id="thumbnail-container">
+            <!-- Thumbnails will be added here -->
+          </div>
+        </div>
+  
+
+        <div class="product-info">
+          <div class="brand">
+            <div class="brand-logo">
+                <img src="https://i.pinimg.com/736x/0c/35/39/0c353963de6059429646330797ce1606.jpg" alt="Reebok Logo">
+                <span>3LEGANT</span>
+            </div>
+        </div>
+        <div class="product-id">HR1234BOK - 8</div>
+          <h1 id="product-name">Product Name</h1>
+          <div class="product-meta">
+            <div class="product-rating">
+              <span class="stars" id="product-rating-stars">★★★★★</span>
+              <span class="rating-count" id="product-rating-count">(120)</span>
+            </div>
+            <span class="product-sku"
+              >SKU: <span id="product-sku">NIK270BLK</span></span
+            >
+          </div>
+
+          <p class="product-price" id="product-price">$149.99</p>
+
+          <div class="product-colors">
+            <h3>Color: <span id="selected-color">Blue</span></h3>
+            <div class="color-options" id="color-options">
+              <!-- Color options will be added here -->
+            </div>
+          </div>
+
+          <div class="product-sizes">
+            <h3>Size</h3>
+            <div class="size-options" id="size-options">
+              <!-- Size options will be added here -->
+            </div>
+            <a href="#" class="size-guide-link">Size Guide</a>
+          </div>
+
+          <div class="product-actions">
+            <button class="add-to-cart">Add to Cart</button>
+            <button class="wishlist-btn" id="wishlist-btn">
+              <i class="far fa-heart"></i> Add to Wishlist
+            </button>
+          </div>
+
+          <div class="product-description">
+            <h3>Description</h3>
+            <p id="product-full-description">
+              Full product description goes here...
+            </p>
+          </div>
+
+          <div class="product-details">
+            <h3>Details</h3>
+            <ul id="product-details-list">
+              <!-- Details will be added here -->
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="container2">
+      <!-- Rating & Reviews Header -->
+      <header class="reviews-header">
+          <h2>Rating & Reviews</h2>
+      </header>
+
+      <!-- Rating Summary Section -->
+      <section class="rating-summary">
+          <div class="overall-rating">
+              <h1>4,5</h1>
+              <p>/5</p>
+              <p class="review-count">(50 New Reviews)</p>
+          </div>
+
+          <div class="rating-bars">
+              <div class="rating-row">
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <span>5</span>
+                  </div>
+                  <div class="bar-container">
+                      <div class="bar" style="width: 80%"></div>
+                  </div>
+              </div>
+              <div class="rating-row">
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <span>4</span>
+                  </div>
+                  <div class="bar-container">
+                      <div class="bar" style="width: 15%"></div>
+                  </div>
+              </div>
+              <div class="rating-row">
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <span>3</span>
+                  </div>
+                  <div class="bar-container">
+                      <div class="bar" style="width: 10%"></div>
+                  </div>
+              </div>
+              <div class="rating-row">
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <span>2</span>
+                  </div>
+                  <div class="bar-container">
+                      <div class="bar" style="width: 5%"></div>
+                  </div>
+              </div>
+              <div class="rating-row">
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <span>1</span>
+                  </div>
+                  <div class="bar-container">
+                      <div class="bar" style="width: 2%"></div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Review Example -->
+      <section class="review-example">
+          <div class="review-header">
+              <div class="reviewer-info">
+                  <h3>Alex Mathio</h3>
+                  <div class="reviewer-stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                  </div>
+              </div>
+              <div class="review-date">10 Oct 2024</div>
+          </div>
+          <div class="review-content">
+              <div class="reviewer-avatar">
+                  <img src="https://i.pinimg.com/474x/74/bd/12/74bd1258fc44f4ff2a9d0dac2d45dd7a.jpg" alt="Reviewer avatar" class="avatar-img">
+              </div>
+              <div class="review-text">
+                  <p>"Nordeen's dedication to sustainability and ethical practices resonates strongly with modern consumers, positioning the brand as a responsible choice in the fashion world."</p>
+              </div>
+              <div class="review-actions">
+                  <button class="action-btn"><i class="fas fa-ellipsis-h"></i></button>
+              </div>
+          </div>
+          <div class="review-progress">
+              <div class="progress-bar"></div>
+          </div>
+      </section>
+
+      <!-- Recommendations Section -->
+      <section class="recommendations">
+          <h2>You might also like</h2>
+          <div class="product-grid">
+              <!-- Product 1 -->
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="https://underarmour.scene7.com/is/image/Underarmour/3027451-400_DEFAULT?rp=standard-30pad%7CgridTileDesktop&scl=1&fmt=jpg&qlt=50&resMode=sharp2&cache=on%2Con&bgc=F0F0F0&wid=512&hei=640&size=472%2C600" alt="Polo with Contrast Trims">
+                  </div>
+                  <div class="product-info">
+                      <h3>Polo with Contrast Trims</h3>
+                      <div class="product-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                          <span>4.5</span>
+                          <span class="review-count">(20)</span>
+                      </div>
+                      <div class="product-price">
+                          <span class="current-price">$272</span>
+                          <span class="original-price">$340</span>
+                          <span class="discount">-20%</span>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Product 2 -->
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="https://underarmour.scene7.com/is/image/Underarmour/3027439-100_DEFAULT?rp=standard-30pad%7CgridTileDesktop&scl=1&fmt=jpg&qlt=50&resMode=sharp2&cache=on%2Con&bgc=F0F0F0&wid=512&hei=640&size=472%2C600" alt="Gradient Graphic T-shirt">
+                  </div>
+                  <div class="product-info">
+                      <h3>Gradient Graphic T-shirt</h3>
+                      <div class="product-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <span>4.0</span>
+                          <span class="review-count">(15)</span>
+                      </div>
+                      <div class="product-price">
+                          <span class="current-price">$145</span>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Product 3 -->
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="https://underarmour.scene7.com/is/image/Underarmour/3027440-101_DEFAULT?rp=standard-30pad%7CgridTileDesktop&scl=1&fmt=jpg&qlt=50&resMode=sharp2&cache=on%2Con&bgc=F0F0F0&wid=512&hei=640&size=472%2C600" alt="Polo with Tipping Details">
+                  </div>
+                  <div class="product-info">
+                      <h3>Polo with Tipping Details</h3>
+                      <div class="product-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <span>4.0</span>
+                          <span class="review-count">(12)</span>
+                      </div>
+                      <div class="product-price">
+                          <span class="current-price">$180</span>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Product 4 -->
+              <div class="product-card">
+                  <div class="product-image">
+                      <img src="https://underarmour.scene7.com/is/image/Underarmour/3027606-400_DEFAULT?rp=standard-30pad%7CgridTileDesktop&scl=1&fmt=jpg&qlt=50&resMode=sharp2&cache=on%2Con&bgc=F0F0F0&wid=512&hei=640&size=472%2C600" alt="Striped Jacket">
+                  </div>
+                  <div class="product-info">
+                      <h3>Striped Jacket</h3>
+                      <div class="product-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                          <span>4.5</span>
+                          <span class="review-count">(30)</span>
+                      </div>
+                      <div class="product-price">
+                          <span class="current-price">$120</span>
+                          <span class="original-price">$150</span>
+                          <span class="discount">-20%</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
+  <footer class="footer">
+    <div class="footer-container">
+        <!-- Newsletter Section -->
+        <section class="footer-section newsletter" aria-labelledby="newsletter-heading">
+            <div class="logo">
+                <h2 id="newsletter-heading"></h2>
+            </div>
+            <p class="newsletter-text">Stay in the loop.</p>
+            <form class="newsletter-form" aria-label="Newsletter Subscription">
+                <input type="email" placeholder="Email Address" class="email-input" aria-label="Enter your email address" required>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+            <p class="terms-text">
+                By providing your email, you agree to the <a href="#" aria-label="Terms and Conditions">Terms & Conditions</a> and <a href="#" aria-label="Privacy Policy">Privacy Policy</a>.<br>
+                You may unsubscribe later.
+            </p>
+            <div class="ua-logo-container">
+                <div class="#">
+                    
+                </div>
+            </div>
+            <div class="payment-methods" aria-labelledby="payment-heading">
+                <h3 id="payment-heading">Accepted Payment Methods</h3>
+                <div class="payment-icons">
+                  <i class="fab fa-cc-mastercard" aria-label="Mastercard"></i>
+                  <i class="fab fa-cc-discover" aria-label="Discover"></i>
+                  <i class="fab fa-cc-visa" aria-label="Visa"></i>
+                  <i class="fab fa-cc-amex" aria-label="American Express"></i>
+                  <i class="fab fa-apple-pay" aria-label="Apple Pay"></i>
+                  <i class="fab fa-paypal" aria-label="PayPal"></i>
+                  <i class="fab fa-kickstarter-k" aria-label="Klarna"></i> <!-- Klarna doesn't have an official FA icon -->
+              </div>
+        </section>
+
+        <!-- Need Help Section -->
+        <section class="footer-section" aria-labelledby="need-help-heading">
+            <h3 id="need-help-heading">Need Help?</h3>
+            <ul>
+                <li><a href="#" aria-label="Help Center">Help Center</a></li>
+                <li><a href="#" aria-label="Size Guide">Size Guide</a></li>
+                <li><a href="#" aria-label="Shipping and Delivery">Shipping & Delivery</a></li>
+                <li><a href="#" aria-label="Returns and Exchanges">Returns & Exchanges</a></li>
+                <li><a href="#" aria-label="Store Locator">Store Locator</a></li>
+                <li><a href="#" aria-label="Order Tracking">Order Tracking</a></li>
+                <li><a href="#" aria-label="Gift Cards">Gift Cards</a></li>
+                <li><a href="#" aria-label="Sitemap">Sitemap</a></li>
+                <li><a href="#" aria-label="Student Discount">Student Discount</a></li>
+            </ul>
+        </section>
+
+        <!-- About Under Armour Section -->
+        <section class="footer-section" aria-labelledby="about-ua-heading">
+            <h3 id="about-ua-heading">About 3Legent</h3>
+            <ul>
+                <li><a href="#" aria-label="Affiliates">Affiliates</a></li>
+                <li><a href="#" aria-label="About Us">About Us/Our Story</a></li>
+                <li><a href="#" aria-label="3LEGENT Rewards">3LEGENT Rewards</a></li>
+                <li><a href="#" aria-label="3LEGENT Blog">3LEGENT Blog</a></li>
+            </ul>
+        </section>
+
+        <!-- UA Social Section -->
+        <section class="footer-section" aria-labelledby="ua-social-heading">
+            <h3 id="ua-social-heading">Our Socials</h3>
+            <ul class="social-links">
+                <li>
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                    <a href="#" aria-label="YouTube">YouTube</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p>
+            © 3Legent, Inc. / <a href="#" aria-label="Privacy Policy">Privacy Policy</a> / <a href="#" aria-label="Terms and Conditions">Terms & Conditions</a> / <a href="#" aria-label="UA Rewards Terms">UA Rewards Terms</a> / <a href="#" aria-label="Cookie Preferences">Cookie Preferences</a> / <a href="#" aria-label="US and California Privacy Policy">US and California Privacy Policy</a> / v2.53.0
+        </p>
+    </div>
+</footer>
+    <script src="product.js" defer></script>
+  </body>
+</html>

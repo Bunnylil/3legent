@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="3LEGANT - Premium Fashion Store with New Arrivals for Men, Women, and Kids">
+  <title>3LEGANT - Premium Fashion Store</title>
+  <link rel="stylesheet" href="payment.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="top-bar">
+        <div class="logo">
+          <a href="index.html" aria-label="3LEGANT Home">3LEGANT</a>
+        </div>
+        <div class="search-container">
+          <div class="search-box">
+            <label for="search-input" class="sr-only">Search the site</label>
+            <i class="fas fa-search" aria-hidden="true"></i>
+            <input type="text" id="search-input" placeholder="Search the site" />
+          </div>
+        </div>
+        <div class="user-actions">
+            <a href="wishlist.html">
+              <button class="wishlist" aria-label="Wishlist">
+                <i class="far fa-heart" aria-hidden="true"></i>
+              </button>
+            </a>            
+            <a href="cart.html">
+              <button class="cart" aria-label="Shopping Cart">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+              </button>
+            </a>            
+            <div class="user-dropdown">
+              <button class="user-container" aria-label="User Account" aria-expanded="false">
+                <i class="fas fa-user user-icon" aria-hidden="true"></i>
+                <i class="fas fa-caret-down caret-down" aria-hidden="true"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="wishlist.html"><i class="fas fa-heart" aria-hidden="true"></i> Wishlist</a>
+                <a href="cart.html" aria-label="Go to shopping cart">
+                  <i class="fas fa-shopping-cart" aria-hidden="true"></i> Cart
+                </a>
+                <a href="signup.html"><i class="fas fa-user-plus" aria-hidden="true"></i> Sign up</a>
+                <a href="signin.html"><i class="fas fa-sign-out-alt" aria-hidden="true"></i> Sign Out</a>                
+              </div>
+            </div>
+          <button class="menu-toggle" aria-label="Menu">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="newarrivals.html">New Arrivals</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="kids.html">Kids</a></li>
+          <li><a href="brands.html">Brands</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <div class="container2">
+        <div class="payment-wrapper">
+            
+            <div class="image-section">
+                <div class="carousel">
+                    <div class="carousel-nav">
+                        <button class="carousel-prev" aria-label="Previous item">❮</button>
+                        <button class="carousel-next" aria-label="Next item">❯</button>
+                    </div>
+                    <div class="carousel-inner" id="cart-items-carousel">
+                        <!-- Items will be dynamically inserted here -->
+                    </div>
+                    <div class="carousel-controls" id="carousel-dots">
+                        <!-- Dots will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+           
+
+            
+            <div class="payment-section">
+                <h2>Checkout</h2>
+                
+                <h3 class="payment-title">Payment Method</h3>
+                <div class="payment-methods">
+                    <div class="payment-method active" data-method="mastercard">
+                        <i class="fab fa-cc-mastercard"></i>
+                        <span>MasterCard</span>
+                    </div>
+                    <div class="payment-method" data-method="visa">
+                        <i class="fab fa-cc-visa"></i>
+                        <span>Visa</span>
+                    </div>
+                    <div class="payment-method" data-method="direct-express">
+                        <i class="fas fa-credit-card"></i>
+                        <span>Direct Express</span>
+                    </div>
+                </div>
+
+                <!-- Payment Method Content -->
+                <div class="payment-content">
+                    <div class="payment-content-item active" id="mastercard-content">
+                        <h3>MasterCard Payment</h3>
+                        <form action="orderpage.html" method="GET">
+
+                            <div class="form-group">
+                                <label for="mc-name">Cardholder Name</label>
+                                <input type="text" id="mc-name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mc-card-number">Card Number</label>
+                                <input type="text" id="mc-card-number" placeholder="XXXX XXXX XXXX XXXX" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="mc-expiry">Expiry Date</label>
+                                    <input type="text" id="mc-expiry" placeholder="MM/YY" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mc-cvv">CVV</label>
+                                    <input type="text" id="mc-cvv" placeholder="XXX" required>
+                                </div>
+                            </div>
+
+                            
+                            
+                            <div class="order-summary">
+                                <h4>Order Summary</h4>
+                                <div class="summary-item">
+                                    <span>Subtotal</span>
+                                    <span id="dynamic-subtotal">$99.99</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span>Shipping</span>
+                                    <span id="dynamic-shipping">$4.99</span>
+                                </div>
+                                <div class="summary-divider"></div>
+                                <div class="summary-item total">
+                                    <span>Total Payment</span>
+                                    <span id="dynamic-total">$104.98</span>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="pay-button">Pay Now</button>
+                        </form>
+                    </div>
+
+                    <div class="payment-content-item" id="visa-content">
+                        <h3>Visa Payment</h3>
+                        <form action="orderpage.html" method="GET">
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label for="visa-name">Cardholder Name</label>
+                                    <input type="text" id="visa-name" placeholder="John Doe" required>
+                                </div>
+
+                                <label for="visa-card-number">Card Number</label>
+                                <input type="text" id="visa-card-number" placeholder="XXXX XXXX XXXX XXXX" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="visa-expiry">Expiry Date</label>
+                                    <input type="text" id="visa-expiry" placeholder="MM/YY" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="visa-cvv">CVV</label>
+                                    <input type="text" id="visa-cvv" placeholder="XXX" required>
+                                </div>
+                            </div>
+
+                            
+                            
+                            <div class="order-summary">
+                                <h4>Order Summary</h4>
+                                <div class="summary-item">
+                                    <span>Subtotal</span>
+                                    <span>$99.99</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span>Shipping</span>
+                                    <span>$4.99</span>
+                                </div>
+                                <div class="summary-divider"></div>
+                                <div class="summary-item total">
+                                    <span>Total Payment</span>
+                                    <span>$104.98</span>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="pay-button">Pay Now</button>
+                        </form>
+                    </div>
+
+                    <div class="payment-content-item" id="direct-express-content">
+                        <h3>Direct Express Payment</h3>
+                        <form action="orderpage.html" method="GET">
+
+                            <div class="form-group">
+                                <label for="de-name">Cardholder Name</label>
+                                <input type="text" id="de-name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="de-card-number">Card Number</label>
+                                <input type="text" id="de-card-number" placeholder="XXXX XXXX XXXX XXXX" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="de-expiry">Expiry Date</label>
+                                    <input type="text" id="de-expiry" placeholder="MM/YY" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="de-cvv">CVV</label>
+                                    <input type="text" id="de-cvv" placeholder="XXX" required>
+                                </div>
+                            </div>
+
+                            
+                            
+                            <div class="order-summary">
+                                <h4>Order Summary</h4>
+                                <div class="summary-item">
+                                    <span>Subtotal</span>
+                                    <span>$99.99</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span>Shipping</span>
+                                    <span>$4.99</span>
+                                </div>
+                                <div class="summary-divider"></div>
+                                <div class="summary-item total">
+                                    <span>Total Payment</span>
+                                    <span>$104.98</span>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="pay-button">Pay Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <footer class="footer">
+                <div class="footer-container">
+                    <section class="footer-section newsletter" aria-labelledby="newsletter-heading">
+                        <div class="logo">
+                            <h2 id="newsletter-heading"></h2>
+                        </div>
+                        <p class="newsletter-text">Stay in the loop.</p>
+                        <form class="newsletter-form" aria-label="Newsletter Subscription">
+                            <input type="email" placeholder="Email Address" class="email-input" aria-label="Enter your email address" required>
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </form>
+                        <p class="terms-text">
+                            By providing your email, you agree to the <a href="#" aria-label="Terms and Conditions">Terms & Conditions</a> and <a href="#" aria-label="Privacy Policy">Privacy Policy</a>.<br>
+                            You may unsubscribe later.
+                        </p>
+                        <div class="ua-logo-container">
+                            <div class="#">                     
+                            </div>
+                        </div>
+                        <div class="payment-methods" aria-labelledby="payment-heading">
+                            <h3 id="payment-heading">Accepted Payment Methods</h3>
+                            <div class="payment-icons">
+                              <i class="fab fa-cc-mastercard" aria-label="Mastercard"></i>
+                              <i class="fab fa-cc-visa" aria-label="Visa"></i>
+                              <i class="fab fa-apple-pay" aria-label="Apple Pay"></i>
+                              <i class="fab fa-paypal" aria-label="PayPal"></i>
+                          </div>
+                    </section>
+                    <section class="footer-section" aria-labelledby="need-help-heading">
+                        <h3 id="need-help-heading">Need Help?</h3>
+                        <ul>
+                            <li><a href="#" aria-label="Help Center">Help Center</a></li>
+                            <li><a href="#" aria-label="Size Guide">Size Guide</a></li>
+                            <li><a href="#" aria-label="Shipping and Delivery">Shipping & Delivery</a></li>
+                            <li><a href="#" aria-label="Returns and Exchanges">Returns & Exchanges</a></li>
+                            <li><a href="#" aria-label="Store Locator">Store Locator</a></li>
+                            <li><a href="#" aria-label="Order Tracking">Order Tracking</a></li>
+                            <li><a href="#" aria-label="Gift Cards">Gift Cards</a></li>
+                            <li><a href="#" aria-label="Sitemap">Sitemap</a></li>
+                            <li><a href="#" aria-label="Student Discount">Student Discount</a></li>
+                        </ul>
+                    </section>
+                    <section class="footer-section" aria-labelledby="about-ua-heading">
+                        <h3 id="about-ua-heading">About 3Legent</h3>
+                        <ul>
+                            <li><a href="#" aria-label="Affiliates">Affiliates</a></li>
+                            <li><a href="#" aria-label="About Us">About Us/Our Story</a></li>
+                            <li><a href="#" aria-label="3legant Rewards">3legant Rewards</a></li>
+                            <li><a href="#" aria-label="3legant Community">3legant Community</a></li>
+                            <li><a href="#" aria-label="3legant Blog">3legant Blog</a></li>
+                        </ul>
+                    </section>
+                    <section class="footer-section" aria-labelledby="ua-social-heading">
+                        <h3 id="ua-social-heading">Our Socials</h3>
+                        <ul class="social-links">
+                            <li>
+                                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                                <a href="#" aria-label="Instagram">Instagram</a>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                                <a href="#" aria-label="Facebook">Facebook</a>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                                <a href="#" aria-label="Twitter">Twitter</a>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                                <a href="#" aria-label="YouTube">YouTube</a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="footer-bottom">
+                    <p>
+                        © 3Legent, Inc. / <a href="#" aria-label="Privacy Policy">Privacy Policy</a> / <a href="#" aria-label="Terms and Conditions">Terms & Conditions</a> / <a href="#" aria-label="UA Rewards Terms">3legant Rewards Terms</a> / <a href="#" aria-label="Cookie Preferences">Cookie Preferences</a> / <a href="#" aria-label="US and Kenya Privacy Policy">US and Kenya Privacy Policy</a> / v2.53.0
+                    </p>
+                </div>
+            </footer>
+    <script src="payment.js"></script>
+</body>
+</html>

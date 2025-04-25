@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3LEGANT - Men</title>
+    <link rel="stylesheet" href="women.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <!-- Your existing header remains the same -->
+            <div class="top-bar">
+                <div class="logo">
+                    <a href="#" aria-label="3LEGANT Home">3LEGANT</a>
+                </div>
+                <div class="search-container">
+                    <div class="search-box">
+                        <label for="search-input" class="sr-only">Search the site</label>
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                        <input type="text" id="search-input" placeholder="Search the site" />
+                    </div>
+                </div>
+                <div class="user-actions">
+                    <button class="wishlist" aria-label="Wishlist">
+                        <i class="far fa-heart" aria-hidden="true"></i>
+                    </button>
+                    <button class="cart" aria-label="Shopping Cart">
+                        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                    </button>
+                    <div class="user-dropdown">
+                        <button class="user-container" aria-label="User Account" aria-expanded="false">
+                            <i class="fas fa-user user-icon" aria-hidden="true"></i>
+                            <i class="fas fa-caret-down caret-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#"><i class="fas fa-user-circle" aria-hidden="true"></i> My Account</a>
+                            <a href="#"><i class="fas fa-heart" aria-hidden="true"></i> Wishlist</a>
+                            <a href="#"><i class="fas fa-shopping-bag" aria-hidden="true"></i> Orders</a>
+                            <a href="#"><i class="fas fa-sign-out-alt" aria-hidden="true"></i> Log Out</a>
+                        </div>
+                    </div>
+                    <button class="menu-toggle" aria-label="Menu">
+                        <i class="fas fa-bars" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <nav aria-label="Main Navigation">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="newarrivals.html">New Arrivals</a></li>
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="#" class="active">Women</a></li>                    
+                    <li><a href="kids.html">Kids</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="breadcrumbs">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-item"><a href="#" class="breadcrumbs-link">Home</a></li>
+                <li class="breadcrumbs-item"><a href="#" class="breadcrumbs-link">Women</a></li>
+            </ul>
+        </div>
+        
+        <div class="container2">
+            <aside class="filters">
+                <!-- Your existing filters remain the same -->
+                <div class="filter-group">
+                    <h3>Filters</h3>
+                    <button class="clear-btn">Clear all</button>
+                </div>
+                <div class="filter-section">
+                    <div class="filter-header">
+                        <h4>Gender</h4>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="gender" value="Men">
+                            <span>Men</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="gender" value="Women">
+                            <span>Women</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="gender" value="Kids">
+                            <span>Kids</span>
+                        </label>    
+                        <h4>Product category</h4>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="Clothing">
+                            <span>Clothing</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="Shoes">
+                            <span>Shoes</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="Accessories">
+                            <span>Accessories</span>
+                        </label>
+                    </div>
+                </div>       
+                <div class="filter-section">
+                    <div class="filter-header">
+                        <h4>Product type</h4>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="type" value="Sneakers">
+                            <span>Sneakers</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="type" value="Shorts">
+                            <span>Shorts</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="type" value="Hoodies">
+                            <span>Hoodies</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="type" value="Sunglasses">
+                            <span>Sunglasses</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="type" value="Watches">
+                            <span>Watches</span>
+                        </label>
+                    </div>
+                </div>       
+                <div class="filter-section">
+                    <div class="filter-header">
+                        <h4>Price</h4>
+                        <span class="toggle-icon">-</span>
+                    </div>
+                    <div class="filter-options">
+                        <div class="price-range">
+                            <input type="number" placeholder="Min" class="price-input" name="minPrice">
+                            <span>-</span>
+                            <input type="number" placeholder="Max" class="price-input" name="maxPrice">
+                            <button class="ok-btn">OK</button>
+                        </div>
+                    </div>
+                </div>        
+                <div class="filter-section">
+                    <div class="filter-header">
+                        <h4>Size</h4>
+                        <span class="toggle-icon">-</span>
+                    </div>
+                    <div class="filter-options size-grid">
+                        <button type="button" class="size-btn" data-size="36">36</button>
+                        <button type="button" class="size-btn" data-size="37">37</button>
+                        <button type="button" class="size-btn" data-size="38">38</button>
+                        <button type="button" class="size-btn" data-size="39">39</button>
+                        <button type="button" class="size-btn" data-size="40">40</button>
+                        <button type="button" class="size-btn" data-size="41">41</button>
+                        <button type="button" class="size-btn" data-size="42">42</button>
+                        <button type="button" class="size-btn" data-size="43">43</button>
+                        <button type="button" class="size-btn" data-size="44">44</button>
+                        <button type="button" class="size-btn" data-size="45">45</button>
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <div class="filter-header">
+                        <h4>Sports</h4>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="sport" value="Basketball">
+                            <span>Basketball</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="sport" value="Football">
+                            <span>Football</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="sport" value="Golf">
+                            <span>Golf</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="sport" value="Training">
+                            <span>Training</span>
+                        </label>
+                    </div>
+                </div>       
+                <div class="filter-section">
+                    <div class="filter-header">
+                        
+                        <h4>Brand</h4>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="brand" value="Nike">
+                            <span>Nike</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="brand" value="Adidas">
+                            <span>Adidas</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="brand" value="New Balance">
+                            <span>New Balance</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="brand" value="UnderArmour">
+                            <span>UnderArmour</span>
+                        </label>
+                    </div>
+                </div>
+            </aside>
+            
+            <main class="products-container">
+                <div class="products-header">
+                    <div class="results-count">
+                        <span id="results-count">Loading products...</span>
+                    </div>
+                    <div class="sort-options">
+                        <span>Sort by:</span>
+                        <select id="sort-by">
+                            <option value="popularity">Popularity</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="newest">Newest</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="products-grid" id="products-grid">
+                    <!-- Products will be loaded here dynamically -->
+                    <div class="loading-spinner">
+                        <i class="fas fa-spinner fa-spin"></i> Loading products...
+                    </div>
+                </div>
+                
+                <div class="pagination" id="pagination">
+                    <!-- Pagination will be loaded here dynamically -->
+                </div>
+            </main>
+        </div>
+        
+        <footer class="footer">
+            <!-- Your existing footer remains the same -->
+            <div class="footer-container">
+                <section class="footer-section newsletter" aria-labelledby="newsletter-heading">
+                    <div class="logo">
+                        <h2 id="newsletter-heading"></h2>
+                    </div>
+                    <p class="newsletter-text">Stay in the loop.</p>
+                    <form class="newsletter-form" aria-label="Newsletter Subscription">
+                        <input type="email" placeholder="Email Address" class="email-input" aria-label="Enter your email address" required>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                    <p class="terms-text">
+                        By providing your email, you agree to the <a href="#" aria-label="Terms and Conditions">Terms & Conditions</a> and <a href="#" aria-label="Privacy Policy">Privacy Policy</a>.<br>
+                        You may unsubscribe later.
+                    </p>
+                    <div class="payment-methods" aria-labelledby="payment-heading">
+                        <h3 id="payment-heading">Accepted Payment Methods</h3>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-mastercard" aria-label="Mastercard"></i>
+                            <i class="fab fa-cc-discover" aria-label="Discover"></i>
+                            <i class="fab fa-cc-visa" aria-label="Visa"></i>
+                            <i class="fab fa-cc-amex" aria-label="American Express"></i>
+                            <i class="fab fa-apple-pay" aria-label="Apple Pay"></i>
+                            <i class="fab fa-paypal" aria-label="PayPal"></i>
+                            <i class="fab fa-kickstarter-k" aria-label="Klarna"></i>
+                        </div>
+                    </div>
+                </section>
+                <section class="footer-section" aria-labelledby="need-help-heading">
+                    <h3 id="need-help-heading">Need Help?</h3>
+                    <ul>
+                        <li><a href="#" aria-label="Help Center">Help Center</a></li>
+                        <li><a href="#" aria-label="Size Guide">Size Guide</a></li>
+                        <li><a href="#" aria-label="Shipping and Delivery">Shipping & Delivery</a></li>
+                        <li><a href="#" aria-label="Returns and Exchanges">Returns & Exchanges</a></li>
+                        <li><a href="#" aria-label="Store Locator">Store Locator</a></li>
+                        <li><a href="#" aria-label="Order Tracking">Order Tracking</a></li>
+                        <li><a href="#" aria-label="Gift Cards">Gift Cards</a></li>
+                        <li><a href="#" aria-label="Sitemap">Sitemap</a></li>
+                        <li><a href="#" aria-label="Student Discount">Student Discount</a></li>
+                    </ul>
+                </section>
+                <section class="footer-section" aria-labelledby="about-ua-heading">
+                    <h3 id="about-ua-heading">About 3Legent</h3>
+                    <ul>
+                        <li><a href="#" aria-label="Affiliates">Affiliates</a></li>
+                        <li><a href="#" aria-label="About Us">About Us/Our Story</a></li>
+                        <li><a href="#" aria-label="3LEGENT Rewards">3LEGENT Rewards</a></li>
+                        <li><a href="#" aria-label="3LEGENT Blog">3LEGENT Blog</a></li>
+                    </ul>
+                </section>
+                <section class="footer-section" aria-labelledby="ua-social-heading">
+                    <h3 id="ua-social-heading">Our Socials</h3>
+                    <ul class="social-links">
+                        <li>
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            <a href="#" aria-label="Instagram">Instagram</a>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                            <a href="#" aria-label="Facebook">Facebook</a>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                            <a href="#" aria-label="Twitter">Twitter</a>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                            <a href="#" aria-label="YouTube">YouTube</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="footer-bottom">
+                <p> © 3Legent, Inc. / <a href="#" aria-label="Privacy Policy">Privacy Policy</a> / <a href="#" aria-label="Terms and Conditions">Terms & Conditions</a> / <a href="#" aria-label="UA Rewards Terms">UA Rewards Terms</a> / <a href="#" aria-label="Cookie Preferences">Cookie Preferences</a> / <a href="#" aria-label="US and California Privacy Policy">US and California Privacy Policy</a> / v2.53.0</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="women.js" defer></script>
+</body>
+</html>

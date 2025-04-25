@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мужские кроссовки и кеды | ROZETKA</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+      <div class="container">
+          <header class="header">
+            <div class="top-bar">
+              <div class="logo">
+                <a href="#" aria-label="3LEGANT Home">3LEGANT</a>
+              </div>
+              <div class="search-container">
+                <div class="search-box">
+                  <label for="search-input" class="sr-only">Search the site</label>
+                  <i class="fas fa-search" aria-hidden="true"></i>
+                  <input type="text" id="search-input" placeholder="Search the site" />
+                </div>
+              </div>
+              <div class="user-actions">
+                <button class="wishlist" aria-label="Wishlist">
+                  <i class="far fa-heart" aria-hidden="true"></i>
+                </button>
+      
+                <button class="cart" aria-label="Shopping Cart">
+                  <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                  <span class="cart-badge">1</span>
+                </button>
+                <div class="user-dropdown">
+                  <button class="user-container" aria-label="User Account" aria-expanded="false">
+                    <i class="fas fa-user user-icon" aria-hidden="true"></i>
+                    <i class="fas fa-caret-down caret-down" aria-hidden="true"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#"><i class="fas fa-user-circle" aria-hidden="true"></i> My Account</a>
+                    <a href="#"><i class="fas fa-heart" aria-hidden="true"></i> Wishlist</a>
+                    <a href="#"><i class="fas fa-shopping-bag" aria-hidden="true"></i> Orders</a>
+                    <a href="#"><i class="fas fa-sign-out-alt" aria-hidden="true"></i> Log Out</a>
+                  </div>
+                </div>
+                <button class="menu-toggle" aria-label="Menu">
+                  <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            <nav aria-label="Main Navigation">
+              <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#" class="active">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </nav>
+          </header>
+  
+          <div class="cart-container">
+              <h1 class="cart-text">Cart</h1>
+              <p class="progress-text">Shop for $200 more to enjoy FREE Shipping</p>
+            </div>
+        
+            <div id="progress-container">
+              <div id="progress-bar">
+                <span id="progress-amount"></span>
+              </div>
+            </div>
+        
+            <div class="cart-container">
+              <h1 class="cart-text">Cart</h1>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Subtotal</th>
+                  </tr>
+                </thead>
+                <tbody id="cart-items">
+                  <!-- Cart items will be dynamically inserted here -->
+                </tbody>
+              </table>
+            </div>
+        
+            <div class="container2">
+              <div class="coupon-section">
+                <h2>Have a coupon?</h2>
+                <p>Add your code for an instant cart discount.</p>
+                <div class="input-group">
+                  <input
+                    type="text"
+                    id="coupon-input"
+                    placeholder="Input coupon code"
+                  />
+                  <button onclick="applyCoupon()">Apply</button>
+                </div>
+                <div id="coupon-message"></div>
+              </div>
+              <div class="cart-summary">
+                <h2>Cart summary</h2>
+                <div class="shipping-options">
+                  <label>
+                    <input
+                      type="radio"
+                      name="shipping"
+                      value="free"
+                      checked
+                      onchange="updateCartSummary()"
+                    />
+                    Free shipping <span class="price">$0.00</span>
+                  </label>
+                  <label>
+                    <input
+                      type="radio"
+                      name="shipping"
+                      value="express"
+                      onchange="updateCartSummary()"
+                    />
+                    Express shipping <span class="price">$15.00</span>
+                  </label>
+                </div>
+                <div class="totals">
+                  <p>Subtotal: <span class="price" id="subtotal">$0.00</span></p>
+                  <p id="discount-line" style="display: none;">
+                    Discount (10%): <span class="price" id="discount-amount">-$0.00</span>
+                  </p>
+                  <p>Shipping: <span class="price" id="shipping-cost">$0.00</span></p>
+                  <p class="total-price">Total: <span class="price" id="total">$0.00</span></p>
+                </div>
+                <button class="checkout-btn" onclick="prepareCheckout()">
+                  Checkout
+                </button>
+              </div>
+            </div>
+  
+          <script src="cart.js"></script>
+      </body>
+  </html>
